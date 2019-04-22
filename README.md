@@ -16,11 +16,11 @@ docker build -t dqa4/tfbench:nightly .
 
 ```
 ### Run tensorflow benchmark
-`nvidia-docker run -ti --rm dqa4/tfbench:nightly
+`nvidia-docker run -ti --rm dqa4/tfbench:nightly`
 
 or
 
-`docker run --runtime=nvidia -it --rm dqa4/tfbench:nightly
+`docker run --runtime=nvidia -it --rm dqa4/tfbench:nightly`
 
 ### FAQ
 **Q:** Premission denied when docker build, docker run?
