@@ -9,17 +9,18 @@ preinstall: Driver & Docker & Nvidia-Docker2
 ```
 #至桌面新增資料夾，並在資料夾內下載 Dockerfile製作成image
 cd ~/Desktop
-mkdir <file name>
-wget https://github.com/fatwinnie/tf_benchmark/blob/master/Dockerfile
-docker build -t tfbench_nightly
+mkdir tf_benchmark
+cd tf_benchmark
+wget https://raw.githubusercontent.com/fatwinnie/tf_benchmark/master/Dockerfile
+docker build -t dqa4/tfbench:nightly .
 
 ```
 ### Run tensorflow benchmark
-`nvidia-docker run -ti --rm tfbench_nightly`
+`nvidia-docker run -ti --rm dqa4/tfbench:nightly
 
 or
 
-`docker run --runtime=nvidia -it --rm tfbench_nightly`
+`docker run --runtime=nvidia -it --rm dqa4/tfbench:nightly
 
 ### FAQ
 **Q:** Premission denied when docker build, docker run?
