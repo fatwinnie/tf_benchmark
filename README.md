@@ -3,7 +3,7 @@
 
 ### preinstall: Driver & Docker & Nvidia-Docker2
 
-詳細安裝步驟請見[Install Nvidia Driver&Docker&NV Docker](https://github.com/fatwinnie/tf_benchmark.wiki.git)
+詳細安裝步驟請見[Install Nvidia Driver&Docker&NV Docker](https://github.com/fatwinnie/tf_benchmark/wiki/Install-Nvidia-Driver&Docker&NV-Docker)
 
 ### Build a tensorflow-benchmark image based on tensorflow/benchmark:nightly-gpu-py3
 ```
