@@ -5,7 +5,7 @@
 
 FROM tensorflow/tensorflow:nightly-gpu-py3
 
-LABEL maintainer="Michelle Chiang <michellechiang23@gmail.com>"
+LABEL maintainer="Ting Chiang <michellechiang23@gmail.com>"
 
 #install git wget  dialog
 RUN apt-get update && apt-get install -y --no-install-recommends \
