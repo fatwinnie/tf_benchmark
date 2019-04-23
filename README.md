@@ -12,15 +12,15 @@ cd ~/Desktop
 mkdir tf_benchmark
 cd tf_benchmark
 wget https://raw.githubusercontent.com/fatwinnie/tf_benchmark/master/Dockerfile
-docker build -t dqa4/tfbench:nightly .
+docker build -t tfbench_nightly .
 
 ```
 ### Run tensorflow benchmark
-`nvidia-docker run -ti --rm dqa4/tfbench:nightly`
+`nvidia-docker run -ti --rm tfbench_nightly`
 
 or
 
-`docker run --runtime=nvidia -it --rm dqa4/tfbench:nightly`
+`docker run --runtime=nvidia -it --rm tfbench_nightly`
 
 ### FAQ
 **Q:** Premission denied when docker build, docker run?
